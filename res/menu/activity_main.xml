@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings" />
+
+    <item
+        android:id="@+id/menu_reset"
+        android:orderInCategory="99"
+        android:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/menu_reset" />
+
+    <item
+        android:id="@+id/menu_reload"
+        android:orderInCategory="98"
+        android:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="@string/menu_reload" />
+</menu>

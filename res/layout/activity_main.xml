@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:text="@string/input_label"
+        android:id="@+id/label" />
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/label"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:inputType="numberSigned"
+        android:text="@string/default_temperature"
+        android:id="@+id/input" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/input"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="20dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:textIsSelectable="true"
+        android:gravity="left|top"
+        android:id="@+id/result" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:text="@string/calculate_button"
+        android:id="@id/button" />
+    
+</RelativeLayout>
